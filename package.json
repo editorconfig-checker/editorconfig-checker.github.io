@@ -1,31 +1,28 @@
 {
-  "name": "ec",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://editorconfig-checker.github.io",
-  "dependencies": {
-    "gh-pages": "^2.1.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
-  },
+  "name": "editorconfig-checker.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/editorconfig-checker/editorconfig-checker.github.io.git"
   },
-  "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "Max Strübing <mxstrbng@gmail.com> (https://github.com/mstruebing)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/editorconfig-checker/editorconfig-checker.github.io/issues"
+  },
+  "homepage": "https://github.com/editorconfig-checker/editorconfig-checker.github.io#readme",
+  "devDependencies": {
+    "husky": "^3.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "cd .src && npm run build && cd .. && ln -sf .src/build/* . && git add . && git commit --amend --no-edit --no-verify"
+    }
   }
 }

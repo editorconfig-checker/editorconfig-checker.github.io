@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+  background-color: #fff;
+  max-width: 90%;
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  padding: 1em;
+  width: 100%;
+}
+
+.logo {
+    width: 100%;
+}
+
+.Main {
+  border: 1px solid grey;
+  background-color: #efebdc;
+  padding: 2em;
+  text-align: left;
+}
+
+code, pre {
+    background-color: #fff;
+    padding: 0.1em;
+}
+
+small {
+    display: block;
+    margin-bottom: 1em;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer ul li {
+    padding: 1em;
+}
+
+footer ul li svg {
+    width: 50px;
+}
