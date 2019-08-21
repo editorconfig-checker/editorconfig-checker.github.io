@@ -147,6 +147,12 @@ function App() {
         </p>
 
         <h3>Docker</h3>
+        <small>
+          <Link
+            url="https://hub.docker.com/r/mstruebing/editorconfig-checker"
+            text="dockerhub"
+          />
+        </small>
         <code>
           docker run --rm --volume=$PWD:/check mstruebing/editorconfig-checker
         </code>
