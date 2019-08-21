@@ -22,7 +22,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "cd .src && npm run build && cd .. && ln -sf .src/build/* . && git add . && git commit --no-verify -m 'generate files'"
+      "pre-commit": "cd .src && npm run build && cd .. && ln -sf .src/build/* . && git add ."
     }
   }
 }
