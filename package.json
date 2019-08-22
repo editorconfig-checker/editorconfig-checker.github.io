@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "find -type l -not -path '*node_modules*' -not -path '*.git*' | xargs rm -f",
+    "build": "cd .src && npm run build"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "cd .src && npm run build && cd .. && ln -sf .src/build/* . && git add ."
+      "pre-commit": "npm run clean && npm run build && ln -sf .src/build/* . && git add ."
     }
   }
 }
