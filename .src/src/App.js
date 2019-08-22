@@ -127,7 +127,7 @@ function App() {
         <h3>PHP</h3>
         <small>
           <Link
-            url="https://github.com/editorconfig-checker/editorconfig-checker.php"
+            url="https://packagist.org/packages/editorconfig-checker/editorconfig-checker"
             text="packagist"
           />{' '}
           |
