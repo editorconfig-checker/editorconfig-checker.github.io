@@ -126,7 +126,18 @@
 
         <h2>How to use this?</h2>
 
-        <h3>Plain</h3>
+        <ol>
+            <li><a href="#plain">Plain</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#php">PHP</a></li>
+            <li><a href="#python">Python</a></li>
+            <li><a href="#docker">docker</a></li>
+            <li><a href="#arch-linux">Arch Linux</a></li>
+            <li><a href="#configuration">Configuration</a></li>
+            <li><a href="#support">Support</a></li>
+        </ol>
+
+        <h3 id="plain">Plain</h3>
         <small>
           <a
             href="https://github.com/editorconfig-checker/editorconfig-checker/releases"
@@ -148,7 +159,7 @@
           <code>bin</code> directory.
         </p>
 
-        <h3>JavaScript</h3>
+        <h3 id="javascript">JavaScript</h3>
         <small>
           <a
             href="https://www.npmjs.com/package/editorconfig-checker"
@@ -174,7 +185,7 @@
           <code>editorconfig-checker</code>.
         </p>
 
-        <h3>PHP</h3>
+        <h3 id="php">PHP</h3>
         <small>
           <a
             href="https://packagist.org/packages/editorconfig-checker/editorconfig-checker"
@@ -200,7 +211,28 @@
           <code>editorconfig-checker</code>.
         </p>
 
-        <h3>Docker</h3>
+        <h3 id="python">Python</h3>
+        <small>
+          <a
+            href="https://pypi.org/project/editorconfig-checker/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >pypi</a
+          >
+          |
+          <a
+            href="https://github.com/editorconfig-checker/editorconfig-checker.python"
+            rel="noopener noreferrer"
+            target="_blank"
+            >github</a
+          >
+        </small>
+
+        <code>
+          pip install editorconfig-checker
+        </code>
+
+        <h3 id="docker">Docker</h3>
         <small>
           <a
             href="https://hub.docker.com/r/mstruebing/editorconfig-checker"
@@ -213,7 +245,7 @@
           docker run --rm --volume=$PWD:/check mstruebing/editorconfig-checker
         </code>
 
-        <h3>Arch Linux</h3>
+        <h3 id="arch-linux">Arch Linux</h3>
         <small>
           <a
             href="https://aur.archlinux.org/packages/editorconfig-checker-git/"
@@ -235,7 +267,7 @@ cd editorconfig-checker-git && \
 makepkg -si</pre
         >
 
-        <h2>Configuration</h2>
+        <h2 id="configuration">Configuration</h2>
         <p>
           There are a bunch of command line flags you can use, but there is also
           a configuration file which you can use in your current working
@@ -263,7 +295,7 @@ makepkg -si</pre
 }</pre
         >
 
-        <h2>Support</h2>
+        <h2 id="support">Support</h2>
 
         <h3>Github Issues</h3>
         <p>
